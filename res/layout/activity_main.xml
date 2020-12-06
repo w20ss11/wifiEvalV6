@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cqupt.wss.wifieval.MainActivity" >
+    
+    <LinearLayout  
+        android:id="@+id/ll_tv"
+      	android:layout_width="fill_parent" 
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:background="#F0F8FF"
+		android:orientation="vertical"> 
+		
+        <LinearLayout  
+	        android:id="@+id/ll_head"
+	      	android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+       		android:layout_marginBottom="5dp"
+			android:orientation="horizontal"  > 
+			<TextView
+		      	android:layout_width="0dp"  
+	        	android:layout_weight="1.0"
+				android:layout_height="wrap_content"
+				android:id="@+id/times"
+				android:singleLine="true"
+				android:text="@string/times_zh"
+				android:textColor="#21649B"/>
+			<EditText
+		      	android:layout_width="0dp"  
+	        	android:layout_weight="1.0"
+				android:layout_height="wrap_content"
+				android:id="@+id/square"
+				android:hint="@string/hint_zh"
+				android:singleLine="true"
+				android:textColor="#21649B"/>
+		</LinearLayout>
+	    <TextView
+	      	android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+       		android:layout_marginBottom="5dp"
+			android:id="@+id/textview"
+			android:singleLine="false"
+			android:textColor="#21649B"/>
+    </LinearLayout> 
+    
+    <LinearLayout  
+        android:id="@+id/buttons"
+        android:layout_width="fill_parent"  
+        android:layout_height="wrap_content" 
+        android:paddingTop="10dp"
+        android:orientation="horizontal">  
+  
+        <Button  
+            android:layout_width="0dp"  
+	        android:layout_weight="1.0"  
+	        android:layout_height="wrap_content" 
+	        style="?android:attr/buttonStyle"
+            android:id="@+id/start"
+            android:text="@string/start_zh"
+            android:layout_marginLeft="5dp"
+       		android:layout_marginRight="5dp"
+            android:background="#3175B4"
+            android:textColor="#F8F8FF" />
+        <Button  
+            android:layout_width="0dp"  
+	        android:layout_weight="1.0"  
+	        android:layout_height="wrap_content"
+	        style="?android:attr/buttonStyle"
+            android:id="@+id/stop"
+            android:text="@string/stop_zh"
+            android:layout_marginLeft="5dp"
+       		android:layout_marginRight="5dp"
+            android:background="#3175B4"
+            android:textColor="#F8F8FF" />
+        <Button  
+            android:layout_width="0dp"  
+	        android:layout_weight="1.0"  
+	        android:layout_height="wrap_content" 
+	        style="?android:attr/buttonStyle" 
+            android:id="@+id/eval"
+            android:text="@string/eval_zh"
+            android:layout_marginLeft="5dp"
+       		android:layout_marginRight="5dp"
+            android:background="#3175B4"
+            android:textColor="#F8F8FF" />  
+  
+    </LinearLayout> 
+</LinearLayout>
